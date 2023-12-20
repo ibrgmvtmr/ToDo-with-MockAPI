@@ -1,0 +1,9 @@
+/*** 
+    Custom styles for the sign up page.
+    - Applies a darker theme with a gradient background.
+    - Centers the sign up form.
+***/
+body.darker-theme {
+    background-image: linear-gradient(100deg, #001214, #001f29);
+    color: white;
+}

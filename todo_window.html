@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for document information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+    <meta name="Description" content="A dynamic and aesthetic To-Do List WebApp.">
+
+    <!-- External stylesheets and fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous">
+
+    <!-- Favicon and custom stylesheets -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/corner.css">
+
+    <!-- Title of the document -->
+    <title>JUST DO IT</title>
+</head>
+
+<body>
+    <!-- Header section with theme selectors and app title -->
+    <div id="header">
+        <div class="flexrow-container">
+            <!-- Theme selectors -->
+            <div class="standard-theme theme-selector"></div>
+            <div class="light-theme theme-selector"></div>
+            <div class="darker-theme theme-selector"></div>
+        </div>
+        <!-- App title -->
+        <h1 id="title">Just do it.<div id="border"></div></h1>
+    </div>
+
+    <!-- Form section for adding tasks -->
+    <div id="form">
+        <form>
+            <!-- Input for task description -->
+            <input class="todo-input" type="text" placeholder="Add a task.">
+            <!-- Button to submit the task -->
+            <button class="todo-btn" type="submit">I Got This!</button>
+        </form>
+    </div>
+
+    <!-- Display current date and time -->
+    <p><span id="datetime"></span></p>
+    
+    <!-- External script for handling time -->
+    <script src="JS/time.js"></script>
+    
+    <!-- Todo list container -->
+    <div id="myUnOrdList">
+        <ul class="todo-list">
+            <!-- Individual todo items will be added dynamically here -->
+        </ul>
+    </div>
+
+    <!-- External script for main functionality -->
+    <script src="JS/main.js" type="text/javascript"> </script>
+</body>
+
+</html>
